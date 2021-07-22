@@ -3,6 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(151, 9, 9);
+}
+.row{
+    background-color:white;
+}
+.row{
+    width:80%;
+    margin: 50px auto;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.row>*{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+.md-20{
+    margin-bottom: 20px;
+}
 .nascondi{
     display:none;
 }

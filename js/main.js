@@ -30,7 +30,7 @@ function generaPrezzo(){
         prezzo = prezzo*0.6;
     }
     document.getElementById("prezzo").innerHTML=prezzo.toFixed(2);
-    document.getElementById("biglietto").className="show";
+    document.getElementById("biglietto").className=document.getElementById("biglietto").classList+ " show";
 }
 
 document.getElementById("resetta").addEventListener("click",resett);
@@ -39,5 +39,5 @@ function resett(){
     var nome = document.getElementById("nome").value="";
     var eta = document.getElementById("eta").value="";
     var distance = document.getElementById("distance").value="";
-    document.getElementById("biglietto").className="nascondi";
+    document.getElementById("biglietto").className=document.getElementById("biglietto").classList+ " nascondi";
 }
