@@ -20,25 +20,21 @@ function generaPrezzo(){
     var distance = document.getElementById("distance").value;
 
     var prezzo = distance*0.21;
-
+    var offerta="nessuna";
     if(eta=="minorenne"){
         prezzo = prezzo*0.8;
+         offerta="minnorenne";
     }
     if(eta=="over65"){
         prezzo = prezzo*0.6;
+         offerta="over65";
     }
-    if(eta==1){
-        var offerta="nessuna";
-    }else if(eta==2){
-        var offerta="minnorenne";
-    }else{
-        var offerta="over65";
-    }
+       
     var carozza=Math.floor(Math.random()*10)+1;
     var codiceTreno=Math.floor(Math.random()*100000 )+90000 ;
     document.getElementById("nome_biglietto").innerHTML=nome;
     document.getElementById("prezzo").innerHTML=prezzo.toFixed(2);
-    document.getElementById("offerta").innerHTML="offerta " + offerta;
+    document.getElementById("offerta").innerHTML="offerta <br>" + offerta;
     document.getElementById("carozza").innerHTML=carozza;
     document.getElementById("codice").innerHTML=codiceTreno;
     document.getElementById("biglietto").classList.remove("nascondi");
