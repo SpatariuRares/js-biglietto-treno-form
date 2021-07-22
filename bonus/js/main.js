@@ -45,6 +45,6 @@ document.getElementById("resetta").addEventListener("click",resett);
 function resett(){
     var nome = document.getElementById("nome").value="";
     var distance = document.getElementById("distance").value=10;
-    var eta = document.getElementById("eta").value=1;
+    var eta = document.getElementById("eta").value="maggiorenne";
     document.getElementById("biglietto").className=document.getElementById("biglietto").classList+ " nascondi";
 }
