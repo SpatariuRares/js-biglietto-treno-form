@@ -1,0 +1,30 @@
+
+body{
+    background-color: rgba(185,20,80,255);
+}
+
+.bg-purple{
+    background-color:rgba(185,20,80,255)
+}
+.c-purple{
+    color:rgba(185,20,80,255)
+}
+
+.h-400{
+    min-height: 300px;
+}
+
+
+.nascondi{
+    display:none;
+}
+
+
+
+/* common */
+
+/* common */
+
+/* debug */
+
+/* debug */
