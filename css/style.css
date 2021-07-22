@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.nascondi{
+    display:none;
+}
+.show{
+    display:block;
+}
 
 /* common */
 
