@@ -5,42 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Titolo Documento</title>
 </head>
 
 <body class="debug">
     <!-- Inizio Header -->
-    <div class="container">
-        <div class="row md-20 p-20">
-            <div>
-                <label for="nome">Nome Cognome</label>
-                <input type="text" spaceholder="nome" id="nome">
-                
-                <label for="distance">kilometri</label>
-                <input type="number" value="10" id="distance">
-        
-                <label for="eta">eta</label>
-                <select type="text" id="eta">
-                    <option value="maggiorenne">maggiorenne</option>
-                    <option value="minorenne">minorenne</option>
-                    <option value="over65">over65</option>
-                </select>
+    <div class="container-fluid p-5">
+        <div class="row p-3 mb-5 bg-light rounded-3">
+            <div class="col-12 d-flex justify-content-evenly" >
+                <div class="d-flex flex-column c-purple text-center">
+                    <label class="mb-3 " for="nome">Nome Cognome</label>
+                    <input class="text-center rounded-3 viola" type="text" spaceholder="nome" id="nome">
+                </div>
+                <div class="d-flex flex-column c-purple text-center">
+                    <label class="mb-3 " for="distance">kilometri</label>
+                    <input class="text-center rounded-3 viola" step="5" type="number" value="10" id="distance">
+                </div>
+                <div class="d-flex flex-column c-purple text-center">
+                    <label class="mb-3 " for="eta">eta</label>
+                    <select class="rounded-3 viola" type="text" id="eta">
+                        <option value="1">maggiorenne</option>
+                        <option value="2">minorenne</option>
+                        <option value="3">over65</option>
+                    </select>
+                </div>
     
             </div>
-            <div>
-                <button id="genera">
+            <div class="d-flex justify-content-center">
+                <button id="genera" class="m-3">
                     calcola prezzo
                 </button>
-                <button id="resetta">reset</button>
+                <button id="resetta" class="m-3">reset</button>
             </div>
         </div>
     
-        <div id="biglietto" class="nascondi row">
-    
-            <h1>prezzo <span id="prezzo"></span> </h1>
+        <div id="biglietto" class="nascondi row p-3 bg-light">
+            <div class="col-12 p-3">
+                <h3 >dettagli passegeri</h3>
+            </div>
+            <div class="d-flex h-400">
+                <div class="bg-secondary nome col-3 p-3">
+                    <h2>nome <br> passegero <br> <span id="nome_biglietto"></span> </h2>
+                </div>
+                <div class="d-flex col-9 p-3 border border-secondary border-end-0 ps-3">
+                    <div class="col-3 d-flex flex-column justify-content-between pb-3">
+                        <h3>offerta</h3>
+                        <h3 id="offerta"></h3>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-between pb-3">
+                        <h3>carozza</h3>
+                        <h3 id="carozza"></h3>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-between pb-3">
+                        <h3>codice CP</h3>
+                        <h3 id="codice"></h3>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-between pb-3">
+                        <h3>costo biglietto</h3>
+                        <h3 id="prezzo"></h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
