@@ -31,7 +31,7 @@ function generaPrezzo(){
     }
        
     var carozza=Math.floor(Math.random()*10)+1;
-    var codiceTreno=Math.floor(Math.random()*100000 )+90000 ;
+    var codiceTreno=Math.floor(Math.random()*(100000-90000) )+90000 ;
     document.getElementById("nome_biglietto").innerHTML=nome;
     document.getElementById("prezzo").innerHTML=prezzo.toFixed(2);
     document.getElementById("offerta").innerHTML="offerta <br>" + offerta;
